@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <div class="row mb-3">
+            <input readonly class="input rounded" type="text" id="result" value="0" style="font-size: 50px; text-align: right; padding-top: 50px;" placeholder="test"/>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" disabled>Deg</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">x!</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" disabled>(</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" disabled>)</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" onclick="display('%')">%</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" onclick="AC()">AC</button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">sin</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">ln</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('7')">7</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('8')">8</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('9')">9</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" onclick="display('/')">÷</button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">cos</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">log</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('4')">4</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('5')">5</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('6')">6</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" onclick="display('*')">x</button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">tan</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">√</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('1')">1</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('2')">2</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('3')">3</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" onclick="display('-')">-</button>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">EXP</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded">x^y</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('0')">0</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-number rounded" onclick="display('.')">.</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn btn-primary rounded" onclick="answer()">=</button>
+            </div>
+            <div class="col">
+                <button type="button" class="text-size button btn button-functional rounded" onclick="display('+')">+</button>
+            </div>
+        </div>
+
+     </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
