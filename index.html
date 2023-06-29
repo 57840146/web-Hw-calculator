@@ -10,8 +10,9 @@
 <body>
     <div class="container mt-5">
 
-        <div class="row mb-3">
-            <input readonly class="input rounded" type="text" id="result" value="0" style="font-size: 50px; text-align: right; padding-top: 50px;" placeholder="test"/>
+        <div class="input-group border rounded p-2">
+            <input readonly class="input rounded" type="text" id="result" value="0" style="font-size: 50px; text-align: right; padding-top: 50px;" placeholder="Enter number"/>
+            <!-- <textarea readonly class="input rounded" id="result" style="font-size: 50px; text-align: right; padding-top: 50px; resize: none;" rows="2">0</textarea> -->
         </div>
 
         <div class="row mb-3">
@@ -19,7 +20,7 @@
                 <button type="button" class="text-size button btn button-functional rounded" disabled>Deg</button>
             </div>
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">x!</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="factorial()">x!</button>
             </div>
             <div class="col">
                 <button type="button" class="text-size button btn button-functional rounded" disabled>(</button>
@@ -37,10 +38,10 @@
 
         <div class="row mb-3">
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">sin</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="sin()">sin</button>
             </div>
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">ln</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="Ln()">ln</button>
             </div>
             <div class="col">
                 <button type="button" class="text-size button btn button-number rounded" onclick="display('7')">7</button>
@@ -58,10 +59,10 @@
 
         <div class="row mb-3">
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">cos</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="cos()">cos</button>
             </div>
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">log</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="log()">log</button>
             </div>
             <div class="col">
                 <button type="button" class="text-size button btn button-number rounded" onclick="display('4')">4</button>
@@ -79,10 +80,10 @@
 
         <div class="row mb-3">
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">tan</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="tan()">tan</button>
             </div>
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">√</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="square_root()">√</button>
             </div>
             <div class="col">
                 <button type="button" class="text-size button btn button-number rounded" onclick="display('1')">1</button>
@@ -100,10 +101,10 @@
         
         <div class="row mb-3">
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">EXP</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="exp()">EXP</button>
             </div>
             <div class="col">
-                <button type="button" class="text-size button btn button-functional rounded">x^y</button>
+                <button type="button" class="text-size button btn button-functional rounded" onclick="power()">x^y</button>
             </div>
             <div class="col">
                 <button type="button" class="text-size button btn button-number rounded" onclick="display('0')">0</button>
